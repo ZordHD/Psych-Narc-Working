@@ -16,6 +16,7 @@ setAdmins(admins) {
 setPage(page) {
     this._page = page
 }
+
 setTotalCount(count) {
     this._totalCount = count
 }
