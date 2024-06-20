@@ -42,7 +42,7 @@ const NewsCards = observer(() => {
                   variant="top" 
                   className='card-img-news-top' 
                   src={process.env.REACT_APP_API_URL + newsItem.image} 
-                  style={{ marginBottom: '-10px' }} />
+                  style={{ marginBottom: '-10px'}} />
                 <Card.Body style={{display:'flex', flexDirection:'column'}}>
                   <Card.Title className='body-Regular-Gradient' style={{ textAlign: 'center', marginBottom: '4px' }}>
                     {newsItem.date}
