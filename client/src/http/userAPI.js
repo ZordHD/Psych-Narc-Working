@@ -25,8 +25,8 @@ export const fetchUsers = async () => {
 };
 
 export const updateUserRole = async (id, permission) => {
-    const { data } = await $authHost.put(`api/users/${id}`, { permission });
-    return data;
+  const { data } = await $authHost.put(`api/users/${id}`, { permission });
+  return data;
 };
 
 export const updateUser = async (id, updatedUserData) => {

@@ -51,31 +51,58 @@ class usersController {
     }
 
     async update(req, res, next) {
-      const { id } = req.params;
-      const { email, name, surname, phone_num, password } = req.body;
+        const { id } = req.params;
+        const { email, name, surname, phone_num, password } = req.body;
 
-      try {
-          const user = await Users.findOne({ where: { id } });
-          if (!user) {
-              return next(ApiError.badRequest('Пользователь не найден'));
-          }
+        try {
+            const user = await Users.findOne({ where: { id } });
+            if (!user) {
+                return next(ApiError.badRequest('Пользователь не найден'));
+            }
 
-          if (email) user.email = email;
-          if (name) user.name = name;
-          if (surname) user.surname = surname;
-          if (phone_num) user.phone_num = phone_num;
-          if (password) {
-              const hashPassword = await bcrypt.hash(password, 5);
-              user.password = hashPassword;
-          }
+            if (email) user.email = email;
+            if (name) user.name = name;
+            if (surname) user.surname = surname;
+            if (phone_num) user.phone_num = phone_num;
+            if (password) {
+                const hashPassword = await bcrypt.hash(password, 5);
+                user.password = hashPassword;
+            }
 
-          await user.save();
+            await user.save();
 
-          return res.json({ message: 'Данные пользователя успешно обновлены', user });
-      } catch (error) {
-          next(ApiError.internal('Ошибка при обновлении данных пользователя'));
-      }
-  }
+            return res.json({ message: 'Данные пользователя успешно обновлены', user });
+        } catch (error) {
+            next(ApiError.internal('Ошибка при обновлении данных пользователя'));
+        }
+    }
+    async getAll(req, res, next) {
+        try {
+            const users = await Users.findAll();
+            return res.json(users);
+        } catch (error) {
+            next(ApiError.internal('Ошибка при получении списка пользователей'));
+        }
+    }
+    
+    async updateUserRole(req, res, next) {
+        const { id } = req.params;
+        const { permission } = req.body;
+
+        try {
+            const user = await Users.findOne({ where: { id } });
+            if (!user) {
+                return next(ApiError.badRequest('Пользователь не найден'));
+            }
+
+            user.permission = permission;
+            await user.save();
+
+            return res.json({ message: 'Роль пользователя успешно обновлена', user });
+        } catch (error) {
+            next(ApiError.internal('Ошибка при обновлении роли пользователя'));
+        }
+    }
 }
 
 

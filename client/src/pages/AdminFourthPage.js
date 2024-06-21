@@ -15,21 +15,21 @@ const AdminFourthPage = () => {
                 className="mt-4 p-2"
                 onClick={() => setServicesRBVisible(true)}
             >
-                Добавить услугу для граждан РБ
-            </Button>
-            <Button 
-                variant={"outline-dark"} 
-                className="mt-4 p-2"
-                onClick={() => setForeignServicesVisible(true)}
-            >
-                Добавить услугу для иностранных граждан
+                Добавить сервис для граждан РБ
             </Button>
             <Button 
                 variant={"outline-dark"} 
                 className="mt-4 p-2"
                 onClick={() => setOtherServicesVisible(true)}
             >
-                Добавить другую услугу
+                Добавить сервис для иностранных граждан
+            </Button>
+            <Button 
+                variant={"outline-dark"} 
+                className="mt-4 p-2"
+                onClick={() => setForeignServicesVisible(true)}
+            >
+                Добавить другой сервис
             </Button>
             <CreateServicesRB show={servicesRBVisible} onHide={() => setServicesRBVisible(false)}/>
             <CreateOtherServices show={otherservicesVisible} onHide={() => setOtherServicesVisible(false)}/>
