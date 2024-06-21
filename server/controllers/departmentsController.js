@@ -32,6 +32,23 @@ class departmentsController {
         return res.json(deps)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const departments = await Departments.destroy({where: {id}});
+        return res.json(departments);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text} = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const departments = await Departments.update({ image: fileName, name, text}, { where: { id } });
+        return res.json(departments);
+    }
+
 }
 
 

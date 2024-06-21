@@ -32,6 +32,23 @@ class massmediaController {
         return res.json(massm)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const news = await Massmedia.destroy({where: {id}});
+        return res.json(news);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text, date } = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const news = await Massmedia.update({ image: fileName, name, text, date }, { where: { id } });
+        return res.json(news);
+    }
+
 }
 
 

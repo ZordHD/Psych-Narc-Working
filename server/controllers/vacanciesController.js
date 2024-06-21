@@ -33,6 +33,22 @@ class vacanciesController {
         return res.json(vacs)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const news = await Vacancies.destroy({where: {id}});
+        return res.json(news);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text, price } = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const news = await Vacancies.update({ image: fileName, name, text, price }, { where: { id } });
+        return res.json(news);
+    }
 }
 
 

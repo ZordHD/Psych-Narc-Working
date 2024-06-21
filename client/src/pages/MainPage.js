@@ -107,10 +107,8 @@ const MainPage = observer(() => {
                 <Row xs={1}>
                     <Col className="col-md-12 col-lg-8">
                         <div className="title-Text" style={{maxWidth:'870px'}}>
-                        Lorem ipsum dolor sit amet consectetur. Vel sodales sed viverra diam tincidunt. Amet blandit auctor scelerisque semper nunc. Tristique tempus nulla tincidunt et cursus vitae. Vulputate pellentesque risus sed urna. Duis orci enim in augue tellus quam fusce enim. Orci purus mus risus nulla quis non nunc in ac. Sed est vitae volutpat laoreet elit. Elit at ac eu nec non adipiscing ac. Mattis faucibus viverra tristique nunc cursus elit.
+                        Учреждение здравоохранения <span style={{fontWeight:'700', color:'#1F674F'}}>'Психиатрия-Наркология'</span> представляет собой современный медицинский центр, специализирующийся на оказании квалифицированной помощи пациентам с психическими расстройствами и наркологическими проблемами. Наш опытный медицинский персонал обеспечивает комплексный подход к диагностике, лечению и реабилитации каждого пациента. Мы стремимся создать поддерживающую и безопасную среду, где каждый человек может получить профессиональную помощь и поддержку в своем выздоровлении. Наша миссия - помочь пациентам вернуть радость жизни и достичь психического и физического благополучия.
                         </div>
-                        <div className="title-Text" style={{maxWidth:'870px'}}>
-                        Lorem ipsum dolor sit amet consectetur. Vel sodales sed viverra diam tincidunt. Amet blandit auctor scelerisque semper nunc. Tristique tempus nulla tincidunt et cursus vitae. Vulputate pellentesque risus sed urna. Duis orci enim in augue tellus quam fusce enim. Orci purus mus risus nulla quis non nunc in ac. Sed est vitae volutpat laoreet elit. Elit at ac eu nec non adipiscing ac. </div>
                     </Col>
                     <Col className="col-md-12 col-lg-4">
                         <Card style={{border:'none'}}>

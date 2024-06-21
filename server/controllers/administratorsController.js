@@ -38,6 +38,22 @@ class administratorsController {
         return res.json(admins)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const administrators = await Administrators.destroy({where: {id}});
+        return res.json(administrators);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text} = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const administrators = await Administrators.update({ image: fileName, name, text}, { where: { id } });
+        return res.json(administrators);
+    }
 }
 
 

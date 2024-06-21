@@ -10,7 +10,7 @@ class otherservicesController {
         let fileName = uuid.v4() + ".jpg"
         image.mv(path.resolve(__dirname, '../', 'static', fileName))
 
-        const services = await OtherServices.create({name, text, fulltext, image: fileName})
+        const services = await OtherServices.create({name, text, image: fileName, fulltext})
         return res.json(services)
     }
 
@@ -32,7 +32,7 @@ class otherservicesController {
         const services = await OtherServices.findOne(
             {
                 where: {id},
-                include: [{model: OtherServices, as: 'info'}]
+                include: [{model: Services, as: 'info'}]
             },
         )
         return res.json(services)

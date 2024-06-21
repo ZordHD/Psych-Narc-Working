@@ -34,6 +34,7 @@ const CreateNews = observer(({show, onHide}) => {
         setShowNewsList(true);
       };
     
+      // Функция для закрытия списка новостей
       const handleCloseNewsList = () => {
         setShowNewsList(false);
       };
@@ -76,7 +77,7 @@ const CreateNews = observer(({show, onHide}) => {
                     placeholder="Выберите файл"
                     type="file"
                 />
-                 <Form.Group className="mt-3">
+                <Form.Group className="mt-3">
                     <Form.Control
                         value={newsFullText} 
                         onChange={e => setNewsFullText(e.target.value)}
@@ -85,7 +86,7 @@ const CreateNews = observer(({show, onHide}) => {
                         placeholder="Введите полное описание новости"/>
                     </Form.Group>
             </Form>
-            <Button variant="primary" className='mt-5' onClick={handleShowNewsList}>Новости</Button>
+            <Button className='mt-5 button-3' style={{border:'none'}}  onClick={handleShowNewsList}>Новости</Button>
 
       {/* Список новостей */}
       <NewsList show={showNewsList} onHide={handleCloseNewsList} />

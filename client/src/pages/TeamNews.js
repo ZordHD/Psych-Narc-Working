@@ -35,18 +35,7 @@ const TeamNews = () => {
                             Профсоюз
                         </div>
                         <div className="body-Regular mt-4" style={{color:'#3D9378'}}>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Et elit dignissim purus facilisis nec.
-                            Elit tellus sed in vivamus eget mollis sit auctor.
-                            At varius eu habitant amet sapien lacinia felis.
-                            Augue amet laoreet viverra interdum pharetra tempor nunc.
-                            Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                            Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                            Malesuada diam ornare non aenean in aliquam massa amet.
-                            Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                            Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                            Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                            Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                        Задачи Профсоюза работников госучреждений остаются неизменными на протяжении всех  более 90 лет – это защита трудовых прав и социальных гарантий членов профсоюза, охрана труда и техника безопасности, забота о здоровье и культурном развитии членов профсоюза, повышении качества их жизни.
                         </div>
                     </Col>
                 </Row>
@@ -65,18 +54,13 @@ const TeamNews = () => {
                             БРСМ
                         </div>
                         <div className="body-Regular mt-4" style={{color:'#3D9378'}}>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Et elit dignissim purus facilisis nec.
-                            Elit tellus sed in vivamus eget mollis sit auctor.
-                            At varius eu habitant amet sapien lacinia felis.
-                            Augue amet laoreet viverra interdum pharetra tempor nunc.
-                            Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                            Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                            Malesuada diam ornare non aenean in aliquam massa amet.
-                            Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                            Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                            Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                            Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                        Целью БРСМ является создание условий для всестороннего развития молодежи, раскрытия ее творческого потенциала, содействие развитию в Республике Беларусь гражданского общества, основанного на патриотических и духовно-нравственных ценностях.
+
+Членом Союза молодежи может быть любой гражданин Республики Беларусь, лицо без гражданства, а также иностранные граждане, постоянно проживающие в Республике Беларусь, в возрасте от 14 до 31 года, признающие Устав и программные документы БРСМ.
+
+Молодежный билет – это гарант обретения крепкой дружбы в Союзе с друзьями, достижения поставленных молодым человеком целей.
+
+Сегодня самая массовая молодежная организация Республики Беларусь объединяет наиболее активных представителей нового поколения, тех, кто стремится приложить свои силы и способности, чтобы сделать интереснее, ярче, осмысленнее собственную жизнь и жизнь своих сверстников, а самое главное – своими руками строить молодую Беларусь.
                         </div>
                     </Col>
                 </Row>
@@ -94,18 +78,7 @@ const TeamNews = () => {
                             Белая Русь
                         </div>
                         <div className="body-Regular mt-4" style={{color:'#3D9378'}}>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Et elit dignissim purus facilisis nec.
-                            Elit tellus sed in vivamus eget mollis sit auctor.
-                            At varius eu habitant amet sapien lacinia felis.
-                            Augue amet laoreet viverra interdum pharetra tempor nunc.
-                            Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                            Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                            Malesuada diam ornare non aenean in aliquam massa amet.
-                            Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                            Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                            Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                            Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                        Республиканское общественное объединение «Белая Русь» – это 230 000 неравнодушных патриотов своей страны, объединенных в более 8 700 первичных организаций. Наша работа основана на ясных принципах президентского стратегического курса развития страны. Мы строим свое будущее на прочном фундаменте – патриотизме. Это уважение к своей истории, культуре и традициям, духовным ценностям нашего народа. Это ответственность за свою страну и её будущее. «Белая Русь» способствует объединению патриотически настроенных, ответственных и активных граждан вокруг общих целей и приоритетов. 
                         </div>
                     </Col>
                 </Row>

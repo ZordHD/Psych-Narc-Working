@@ -50,11 +50,10 @@ class newsController {
         const { image } = req.files;
         let fileName = uuid.v4() + ".jpg";
         image.mv(path.resolve(__dirname, '../', 'static', fileName));
-
+      
         const news = await News.update({ image: fileName, name, text, date }, { where: { id } });
         return res.json(news);
     }
-
 }
 
 

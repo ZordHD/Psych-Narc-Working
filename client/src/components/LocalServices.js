@@ -48,11 +48,11 @@ const LocalServices = observer(() => {
       <Row  xs ={1} сlassName="mt-5 justify-content-center" style={{width:'100%'}}>
         {servicesRB.servRB.map(item => (
           <Col key={item.id} className='col-md-6 col-lg-3 g-3'>
-            <Card className='card-HallOfFame' style={{border:'none'}}>
+            <Card className='card-HallOfFame' style={{border:'none', position:'relative'}}>
               <Card.Img 
                 variant="top" 
                 src={process.env.REACT_APP_API_URL + item.image} 
-                style={{ marginBottom:'-7px'}} />
+                style={{ marginBottom:'-7px', minHeight:'45%', maxHeight:'45%'}} />
               <Card.Body style={{display:'flex', flexDirection:'column'}}>
                 <Card.Title 
                   className='body-Semibold' 
@@ -63,7 +63,7 @@ const LocalServices = observer(() => {
                 <Card.Text className='body-Smallest-Text mt-2' style={{color:'white'}}>
                   {item.text}             
                 </Card.Text>
-                <Button className='button-2 ms-auto' style={{ border: 'none', display: 'flex', marginTop: 'auto' }} onClick={() => handleServiceClick(item)}>
+                <Button className='button-2 ms-auto' style={{ border: 'none', marginTop: 'auto' }} onClick={() => handleServiceClick(item)}>
                         Подробнее
                     </Button>
               </Card.Body>

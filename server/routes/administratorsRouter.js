@@ -6,6 +6,7 @@ const administratorsController = require('../controllers/administratorsControlle
 router.post('/', administratorsController.create)
 router.get('/', administratorsController.getAll)
 router.get('/:id', administratorsController.getOne)
-
+router.delete('/:id', administratorsController.delete)
+router.put('/:id', administratorsController.update);
 
 module.exports = router

@@ -58,14 +58,14 @@ const Documents = observer(() => {
 
   return (
     <div>
-      <Container className='block-Standart mt-4'>
-        <Pagination style={{ marginRight: '20px', marginTop: '105px' }}>
+      <Container className='block-Standart'>
+        <Pagination style={{ marginRight: '20px', marginTop: '65px' }}>
           <Pagination.Prev
             disabled={documents.page === 1}
             onClick={() => handlePageChange(documents.page - 1)}
           />
         </Pagination>
-        <Row className="mt-5 block-Standart" style={{ width:'100vw'}}>
+        <Row className="block-Standart" style={{ width:'100vw'}}>
           {documents.docs.map((docsItem, index) => (
             <Col key={index} className='g-5 col-md-4 col-lg-4 col-xs-1'>
               <Card className='card-Docs' style={{ display: 'flex', border: 'none' }}>
@@ -91,7 +91,7 @@ const Documents = observer(() => {
             </Col>
           ))}
         </Row>
-        <Pagination style={{ marginLeft: '20px', marginTop: '105px' }}>
+        <Pagination style={{ marginLeft: '20px', marginTop: '65px' }}>
           <Pagination.Next
             disabled={documents.page === totalPages}
             onClick={() => handlePageChange(documents.page + 1)}

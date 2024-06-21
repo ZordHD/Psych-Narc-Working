@@ -19,11 +19,12 @@ const NewsList = ({ show, onHide }) => {
   const fetchNewsForPage = async (page) => {
     const data = await fetchNews(page);
     setNewsList(data.rows);
-    setTotalPages(Math.ceil(data.count / 3)); 
+    setTotalPages(Math.ceil(data.count / 3)); // Предполагается, что limit равен 3
   };
 
   const handleDelete = async (id) => {
     await deleteNews(id);
+    // Обновляем список новостей, удалив удаленную новость
     setNewsList(newsList.filter((news) => news.id !== id));
   };
 

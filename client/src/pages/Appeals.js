@@ -38,18 +38,9 @@ const Appeals = () => {
                                 Порядок обращения граждан
                             </div>
                             <div className="body-Semibold mt-3" style={{color:'#3D9378'}}>
-                                Lorem ipsum dolor sit amet consectetur.
-                                Et elit dignissim purus facilisis nec.
-                                Elit tellus sed in vivamus eget mollis sit auctor.
-                                At varius eu habitant amet sapien lacinia felis.
-                                Augue amet laoreet viverra interdum pharetra tempor nunc.
-                                Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                                Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                                Malesuada diam ornare non aenean in aliquam massa amet.
-                                Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                                Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                                Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                                Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                            При поступлении письменных и электронных обращений, содержащих вопросы, решение которых не относится к компетенции, в течение пяти рабочих дней такие обращения направляются для рассмотрения организациям в соответствии с их компетенцией с уведомлением заявителей в тот же срок либо в тот же срок, оставляют обращения без рассмотрения по существу и уведомляют об этом заявителей с разъяснением, в какую организацию и в каком порядке следует обратиться для решения вопросов, изложенных в обращениях.
+
+Обязательному приему и регистрации подлежат обращения, поданные в порядке, установленном Законом Республики Беларусь от 18 июля 2011 года «Об обращениях граждан и юридических лиц».
                             </div>
                         </Col>
                     </Row>
@@ -57,14 +48,7 @@ const Appeals = () => {
                 <Container className="mt-3" style={{width:'80vw'}}>
                     <Row>
                         <Col className="body-Semibold" style={{color:'#3D9378'}}>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Pellentesque montes dictumst bibendum eu felis.
-                            Scelerisque cursus ut tincidunt congue enim.
-                            Massa porta metus ullamcorper at blandit ultrices.
-                            Nascetur risus non mauris habitant aliquet sed diam.
-                            Turpis molestie molestie adipiscing adipiscing mattis at turpis eget quis.
-                            Ipsum duis senectus mauris nulla integer. Viverra tempor eget elementum sagittis tempor in sit.
-                            Sollicitudin in amet faucibus non metus varius turpis elit habitant. Nisi lectus urna massa scelerisque in dictum.
+                        Обращения подаются заявителями на белорусском или русском языке в письменной или электронной форме, а также излагаются в устной форме. Письменные обращения подаются нарочным (курьером), по почте, в ходе личного приема, путем внесения замечаний и (или) предложений в книгу замечаний и предложений. Устные обращения излагаются в ходе личного приема.
                         </Col>
                     </Row>
                 </Container>
@@ -79,18 +63,9 @@ const Appeals = () => {
                                 Телефон доверия
                             </div>
                             <div className="body-Semibold mt-3" style={{color:'#3D9378'}}>
-                                Lorem ipsum dolor sit amet consectetur.
-                                Et elit dignissim purus facilisis nec.
-                                Elit tellus sed in vivamus eget mollis sit auctor.
-                                At varius eu habitant amet sapien lacinia felis.
-                                Augue amet laoreet viverra interdum pharetra tempor nunc.
-                                Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                                Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                                Malesuada diam ornare non aenean in aliquam massa amet.
-                                Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                                Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                                Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                                Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                            Каждый человек может столкнуться с ситуацией, которая выбивает из привычного ритма, кажется непереносимой и неразрешимой. В подобных ситуациях народная мудрость советует найти сопереживающего собеседника и «излить ему душу». Такой собеседник теперь есть!
+
+Служба дистанционной психологической помощи "Телефон доверия" оказывает круглосуточную бесплатную анонимную психологическую помощь людям и их семьям, пострадавшим от насилия.
                             </div>
                         </Col>
                         <Col className="col-md-4 col-lg-4" style={{marginTop:'70px'}}>

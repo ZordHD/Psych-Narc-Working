@@ -38,7 +38,22 @@ class servicesRBController {
         return res.json(services)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const servs = await ServicesRB.destroy({where: {id}});
+        return res.json(servs);
+    }
 
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text, fulltext } = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const servs = await ServicesRB.update({ image: fileName, name, text, fulltext }, { where: { id } });
+        return res.json(servs);
+    }
 }
 
 

@@ -52,7 +52,7 @@ const LocalServices = observer(() => {
               <Card.Img 
                 variant="top" 
                 src={process.env.REACT_APP_API_URL + item.image} 
-                style={{ marginBottom:'-7px'}} />
+                style={{ marginBottom:'-7px', minHeight:'45%', maxHeight:'45%'}} />
               <Card.Body style={{display:'flex', flexDirection:'column'}}>
                 <Card.Title 
                   className='body-Semibold' 

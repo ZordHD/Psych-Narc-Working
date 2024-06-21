@@ -10,7 +10,7 @@ class foreignservicesController {
         let fileName = uuid.v4() + ".jpg"
         image.mv(path.resolve(__dirname, '../', 'static', fileName))
 
-        const services = await ForeignServices.create({name, text, fulltext, image: fileName})
+        const services = await ForeignServices.create({name, text, image: fileName, fulltext})
         return res.json(services)
     }
 

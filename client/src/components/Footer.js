@@ -21,7 +21,16 @@ const Footer = () => {
                             Контактная информация
                         </div>
                         <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
-                            Lorem ipsum dolor sit amet consectetur. Enim sit vivamus sed et sed senectus faucibus. Quis fusce mattis in sit diam in purus.
+                        Республика Беларусь, г. Гродно ул. Обухова 15
+                        Индекс: 230003
+                        </div>
+                        <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
+                        <span style={{fontWeight:'700'}}>Реквизиты:</span> Р/с бюджет ВY35 АКВВ 36040000008784000000,
+                        Р/с внебюджет BY96 AKBB 36320000008794000000 ГОУ №400 ОАО “СБ Беларусбанк”, БИК АКВВВY2X УНН 590645878, ОКПО 29205059
+                        </div>
+                        <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
+                        Нужна помощь?
+                        Если вам нужна помощь с чем-то еще воспользуйтесь для поиска <span style={{fontWeight:'700', color:'#00FFAF', cursor:'pointer'}}>FAQs (часто задаваемые вопросы)</span> или напишите нам на mmc@mail.grodno.by и мы будем рады помочь вам!
                         </div>
                     </Col>
                     <Col>
@@ -29,7 +38,11 @@ const Footer = () => {
                             Горячая линия
                         </div>
                         <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
-                            Lorem ipsum dolor sit amet consectetur. Enim sit vivamus sed et sed senectus faucibus. Quis fusce mattis in sit diam in purus.
+                        9.00 до 16.00 действует "горячая" телефонная линия для обращений граждан:
+                        <p style={{color:'#00FFAF', fontWeight:'700'}}>+375 152 72-13-45</p>
+
+                        Начальник главного управления здравоохранения Гродненского облисполкома - Кеда Людмила Николаевна
+                        <p style={{color:'#00FFAF', fontWeight:'700'}}>+375 152 45-07-02</p>
                         </div>
                     </Col>
                     <Col>
@@ -37,7 +50,13 @@ const Footer = () => {
                             Телефоны
                         </div>
                         <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
-                            Lorem ipsum dolor sit amet consectetur. Enim sit vivamus sed et sed senectus faucibus. Quis fusce mattis in sit diam in purus.
+                        Регистратура психиатрии: <span style={{fontWeight:'700', color:'#00FFAF', cursor:'pointer'}}>+375 152 39-83-44</span>
+        
+                        <p>Факс регистратуры: <span style={{fontWeight:'700', color:'#00FFAF', cursor:'pointer'}}>8(0152) 39-83-32</span></p>
+
+                        <p>Регистратура наркологии: <span style={{fontWeight:'700', color:'#00FFAF', cursor:'pointer'}}>+375 152 39-83-62</span></p>
+
+                        <p>Факс: <span style={{fontWeight:'700', color:'#00FFAF', cursor:'pointer'}}>8(0152) 71-69-00</span></p>
                         </div>
                     </Col>
                     <Col>
@@ -45,7 +64,15 @@ const Footer = () => {
                             Email
                         </div>
                         <div style={{color:'white', fontSize:'14px', paddingTop:'10px'}}>
-                            Lorem ipsum dolor sit amet consectetur. Enim sit vivamus sed et sed senectus faucibus. Quis fusce mattis in sit diam in purus.
+                        Email: centr@mmcgrodno.by-Приемная главного врача
+
+                        <p>Email: omts@mmcgrodno.by-Отдел материально-технического снабжения</p>
+
+                        <p>Email: omko@mmcgrodno.by-Организационно-методический отдел</p>
+
+                        <p>Email: prog@mmcgrodno.by-Специалисты по сопровождению ПО</p>
+
+                        <p>Email: zapros@mmcgrodno.by-Одно окно</p>
                         </div>
                     </Col>
                 </Row>

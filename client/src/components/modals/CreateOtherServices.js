@@ -1,21 +1,31 @@
-import React, { useContext, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Modal from "react-bootstrap/Modal";
-import {Button, Form} from "react-bootstrap";
+import { Button, Form, Row, Col } from "react-bootstrap";
+import OtherServicesList from './OtherServicesList';
+import { createOtherServices } from '../../http/otherservicesAPI';  
 import { Context } from '../..';
-import { createOtherServices } from '../../http/otherservicesAPI'; 
 
-const CreateOtherServices = ({show, onHide}) => {
+const CreateOtherServices = ({ show, onHide }) => {
     const {otherservices} = useContext(Context)
 
-    const selectFile = e => {
-        setServiceImg(e.target.files[0])
-    }
-
+    const [showOtherServicesList, setShowOtherServicesList] = useState(false);
     const [serviceImg, setServiceImg] = useState(null)
     const [serviceName, setServiceName] = useState('')
     const [serviceDescription, setServiceDescription] = useState('')
     const [serviceFullText, setServiceFullText] = useState('')
 
+    const handleShowOtherServicesList = () => {
+        setShowOtherServicesList(true);
+    };
+
+    const handleCloseOtherServicesList = () => {
+        setShowOtherServicesList(false);
+    };
+
+    const selectFile = e => {
+        setServiceImg(e.target.files[0])
+    }
+    
     const addServices = () => {
         const formData = new FormData()
         formData.append('name', serviceName)
@@ -25,6 +35,7 @@ const CreateOtherServices = ({show, onHide}) => {
         createOtherServices(formData).then(data => onHide())
     }
 
+
     return (
         <Modal
             show={show}
@@ -32,12 +43,12 @@ const CreateOtherServices = ({show, onHide}) => {
             size="lg"
             centered
         >
-        <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">
-                Добавить услугу в прочие услуги
-            </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Добавить услугу в прочие услуги
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
             <Form>
                 <Form.Control
                     className="mt-3"
@@ -66,13 +77,15 @@ const CreateOtherServices = ({show, onHide}) => {
                         placeholder="Введите полное описание услуги"/>
                     </Form.Group>
             </Form>
-        </Modal.Body>
-        <Modal.Footer>
-            <Button variant={"outline-danger"} onClick={onHide}>Закрыть</Button>
-            <Button variant={"outline-success"} onClick={addServices}>Добавить</Button>
-        </Modal.Footer>
+                <Button className='mt-5 button-3' style={{border:'none'}}  onClick={handleShowOtherServicesList}>Услуги</Button>
+                <OtherServicesList show={showOtherServicesList} onHide={handleCloseOtherServicesList} />
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant={"outline-danger"} onClick={onHide}>Закрыть</Button>
+                <Button variant={"outline-success"} onClick={addServices}>Добавить</Button>
+            </Modal.Footer>
         </Modal>
-        );
-}
+    );
+};
 
-export default CreateOtherServices
+export default CreateOtherServices;

@@ -1,6 +1,6 @@
 const Router = require('express')
 const router = new Router()
-const halloffameController = require('../controllers/halloffameController')
+const halloffameController = require('../controllers/hallOfFameController')
 
 
 router.post('/', halloffameController.create)

@@ -40,18 +40,9 @@ const Structure = () => {
                             История
                         </div>
                         <div className="body-Semibold mt-3" style={{color:'#3D9378'}}>
-                            Lorem ipsum dolor sit amet consectetur.
-                            Et elit dignissim purus facilisis nec.
-                            Elit tellus sed in vivamus eget mollis sit auctor.
-                            At varius eu habitant amet sapien lacinia felis.
-                            Augue amet laoreet viverra interdum pharetra tempor nunc.
-                            Eget et venenatis tempus eu. Arcu cras varius ultrices urna duis est in.
-                            Ultricies ut mauris sapien lectus nam. Tellus justo ultrices consectetur suscipit enim massa.
-                            Malesuada diam ornare non aenean in aliquam massa amet.
-                            Accumsan lorem maecenas dui ipsum commodo nibh morbi sagittis sodales.
-                            Convallis lacus morbi imperdiet semper mollis viverra faucibus fermentum.
-                            Aenean iaculis sit maecenas vivamus. Est molestie ultrices pretium amet tristique eget tortor duis.
-                            Convallis lacus morbi imperdiet semper mollis vi verra faucibus fermentum. 
+                        Гродненский областной психоневрологический диспансер создан  10 февраля 1962 года (приказ по Гродненскому областному отделу здравоохранения № 22-з от 10.02.1962г.). Фактически открыт в мае 1962 года, в приспособленном здании по адресу: ул.К.Маркса, 21. 
+
+                        Первый главный врач диспансера – Киселева Лидия Владимировна.  Диспансер стал первым специализированным учреждением в области, оказывавшим внебольничную психиатрическую помощь населению. Штаты диспансера составляли 13 должностей, в том числе 3 должности врачей-психиатров, 3,5 должности среднего медперсонала, 3 должности младшего медперсонала. Вместе с Киселевой Л.В. первыми врачами в диспансере были Бородулина Л.А., Аносова Н.Д., Тарнапович М.Я. Среди первых  медицинских сестер -  Фролович А.К., Деусова Н.Л., Чигринская Л.А., Буть Я.К., Кизюкевич Е.А., Зинковец А.Н., Петровичева Т.А., Петрякова Е.И.
                         </div>
                     </Col>
                 </Row>
@@ -60,14 +51,7 @@ const Structure = () => {
             <Container className="mt-3" style={{width:'80vw'}}>
                 <Row>
                     <Col className="body-Semibold" style={{color:'#3D9378'}}>
-                        Lorem ipsum dolor sit amet consectetur.
-                        Pellentesque montes dictumst bibendum eu felis.
-                        Scelerisque cursus ut tincidunt congue enim.
-                        Massa porta metus ullamcorper at blandit ultrices.
-                        Nascetur risus non mauris habitant aliquet sed diam.
-                        Turpis molestie molestie adipiscing adipiscing mattis at turpis eget quis.
-                        Ipsum duis senectus mauris nulla integer. Viverra tempor eget elementum sagittis tempor in sit.
-                        Sollicitudin in amet faucibus non metus varius turpis elit habitant. Nisi lectus urna massa scelerisque in dictum.
+                    В 1965 году стационар был переведен  в здание бывшего Бригитского монастыря по адресу: ул.К.Маркса, 27, которое ранее занимала областная клиническая больница.  В структуре диспансера появились КДЛ, рентгенкабинет, физкабинет, аптека. В июне 1966 года к стационару присоединилось и диспансерное отделение. Административно-хозяйственные службы размещались в отдельных приспособленных зданиях на территории бывшего монастыря, включая лямус, являющийся архитектурным памятником деревянного зодчества.
                     </Col>
                 </Row>
             </Container>
@@ -94,14 +78,15 @@ const Structure = () => {
             <Container className="mt-3" style={{width:'76vw'}}>
                 <Row>
                     <Col className="body-Semibold" style={{color:'#3D9378', textAlign:'center'}}>
-                        Lorem ipsum dolor sit amet consectetur.
-                        Pellentesque montes dictumst bibendum eu felis.
-                        Scelerisque cursus ut tincidunt congue enim.
-                        Massa porta metus ullamcorper at blandit ultrices.
-                        Nascetur risus non mauris habitant aliquet sed diam.
-                        Turpis molestie molestie adipiscing adipiscing mattis at turpis eget quis.
-                        Ipsum duis senectus mauris nulla integer. Viverra tempor eget elementum sagittis tempor in sit.
-                        Sollicitudin in amet faucibus non metus varius turpis elit habitant. Nisi lectus urna massa scelerisque in dictum.
+                    Оказание специализированной психиатрической, наркологической,
+психотерапевтической и психологической помощи взрослому и детскому
+населению г. Гродно и Гродненской области, осуществляемой в условиях
+государственных гарантий по обеспечению медицинским обслуживанием
+граждан Республики Беларусь за счет средств бюджета и других источни-
+ков финансирования, организационно методической и экспертной помощи
+организациям здравоохранения области на современном уровне развития
+медицины. Участие в выполнении государственных программ и комплексов
+мер, направленных на снижение уровня психических и поведенческих расстройств и их последствий в обществе.
                     </Col>
                 </Row>
             </Container>

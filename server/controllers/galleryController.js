@@ -37,6 +37,22 @@ class galleryController {
         return res.json(gallery)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const gallery = await Gallery.destroy({where: {id}});
+        return res.json(gallery);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name } = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const gallery = await Gallery.update({ image: fileName, name}, { where: { id } });
+        return res.json(gallery);
+    }
 
 }
 

@@ -52,7 +52,7 @@ const Administration = observer(() => {
                   {administratorsItem.name}
                 </Card.Title>
                     <div className='div-Card-Administration block-Standart'/>
-                <Card.Text className='body-Semibold block-Standart' style={{color:'white'}}>
+                <Card.Text className='body-Semibold block-Standart' style={{color:'white', marginTop:'10px'}}>
                     {administratorsItem.text}                   
                 </Card.Text>
               </Card.Body>

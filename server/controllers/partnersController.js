@@ -38,6 +38,22 @@ class partnersController {
         return res.json(partners)
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const partners = await Partners.destroy({where: {id}});
+        return res.json(partners);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name } = req.body;
+        const { image } = req.files;
+        let fileName = uuid.v4() + ".jpg";
+        image.mv(path.resolve(__dirname, '../', 'static', fileName));
+      
+        const partners = await Partners.update({ image: fileName, name}, { where: { id } });
+        return res.json(partners);
+    }
 
 }
 

@@ -29,6 +29,20 @@ class lineController {
         )
         return res.json(line)
     }
+    
+    async delete(req, res) {
+        const {id} = req.params;
+        const line = await Line.destroy({where: {id}});
+        return res.json(line);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const {text} = req.body;
+      
+        const line = await Line.update({text}, { where: { id } });
+        return res.json(line);
+    }
 
 }
 

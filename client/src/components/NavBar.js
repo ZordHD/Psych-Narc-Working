@@ -75,11 +75,19 @@ const NavBar= observer(() => {
                 {user.isAuth ? (
                   <>
                     <NavLink to={PERSONALACCOUNT_ROUTE} className="body-Semibold" style={({ isActive }) => ({ color: isActive ? '#00FFAF' : '#3D9378', textDecoration: 'none' })}>Аккаунт</NavLink>
-                    <NavDropdown className='custom-dropdown' style={{ width: '36px', height: '26px', marginBottom: '7px' }}>
-                      <NavDropdown.Item onClick={() => logOut()} eventKey="1" drop='start' style={{ marginRight: '30px' }}>
-                        Выйти
-                      </NavDropdown.Item>
-                    </NavDropdown>
+                    <Dropdown style={{ width: '36px', height: '26px', marginBottom: '7px' }}>
+                      <Dropdown.Toggle
+                      style={{
+                        bottom: '200px',
+                        right: '2000px',
+                        zIndex: 1000
+                    }}>
+                      </Dropdown.Toggle>
+
+                      <Dropdown.Menu>
+                        <Dropdown.Item  onClick={() => logOut()} > Выйти</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </>
                 ) : (
                   <NavLink to={LOGIN_ROUTE} className="body-Semibold" style={({ isActive }) => ({ color: isActive ? '#00FFAF' : '#3D9378', textDecoration: 'none' })}>Войти</NavLink>

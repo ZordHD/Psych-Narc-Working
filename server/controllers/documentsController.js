@@ -76,6 +76,35 @@ class documentsController {
         }
     }
 
+    async delete(req, res) {
+        const {id} = req.params;
+        const docs = await Documents.destroy({where: {id}});
+        return res.json(docs);
+    }
+
+    async update(req, res) {
+        const { id } = req.params;
+        const { name, text } = req.body;
+        const { file } = req.files;
+        const fileExtension = path.extname(file.name);
+
+        if (!['.docx', '.pdf'].includes(fileExtension)) {
+            return next(ApiError.badRequest('Недопустимое расширение файла'));
+        }
+
+        const fileName = uuid.v4() + fileExtension;
+        const filePath = path.resolve(__dirname, '../', 'static', fileName);
+
+        file.mv(filePath, async (err) => {
+            if (err) {
+                return next(ApiError.internal('Ошибка при загрузке файла'));
+            }
+
+            const document = await Documents.update({ name, text, file: fileName}, { where: { id } });
+            return res.json(document);
+        });
+    }
+
 }
 
 module.exports = new documentsController();

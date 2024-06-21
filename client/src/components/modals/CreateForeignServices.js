@@ -1,20 +1,21 @@
-import React, { useContext, useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Modal from "react-bootstrap/Modal";
-import {Button, Form} from "react-bootstrap";
-import { Context } from '../..'; 
-import { createForeignServices } from '../../http/foreignservicesAPI';
+import { Button, Form, Row, Col } from "react-bootstrap";
+import { createForeignServices } from '../../http/foreignservicesAPI'; 
+import { Context } from '../..';
 
-const CreateForeignServices = ({show, onHide}) => {
+const CreateForeignServices = ({ show, onHide }) => {
     const {foreignservices} = useContext(Context)
 
-    const selectFile = e => {
-        setServiceImg(e.target.files[0])
-    }
-
+    const [showForeignServicesList, setShowForeignServicesList] = useState(false);
     const [serviceImg, setServiceImg] = useState(null)
     const [serviceName, setServiceName] = useState('')
     const [serviceDescription, setServiceDescription] = useState('')
     const [serviceFullText, setServiceFullText] = useState('')
+
+    const selectFile = e => {
+        setServiceImg(e.target.files[0])
+    }
 
     const addServices = () => {
         const formData = new FormData()
@@ -32,32 +33,32 @@ const CreateForeignServices = ({show, onHide}) => {
             size="lg"
             centered
         >
-        <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">
-                Добавить услугу для иностранных граждан
-            </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <Form>
-                <Form.Control
-                    className="mt-3"
-                    value={serviceName}
-                    onChange={e => setServiceName(e.target.value)}
-                    placeholder="Введите название услуги"
-                />
-                <Form.Control
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Добавить услугу для иностранных граждан
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <Form>
+                    <Form.Control
+                         className="mt-3"
+                         value={serviceName}
+                         onChange={e => setServiceName(e.target.value)}
+                         placeholder="Введите название услуги"
+                    />
+                     <Form.Control
                     className="mt-3"
                     value={serviceDescription}
                     onChange={e => setServiceDescription(e.target.value)}
                     placeholder="Введите описание услуги"
-                />
-                <Form.Control
+                    />
+                     <Form.Control
                     className="mt-3"
                     onChange={selectFile}
                     placeholder="Выберите файл"
                     type="file"
-                />
-                 <Form.Group className="mt-3">
+                    />
+                   <Form.Group className="mt-3">
                     <Form.Control
                         value={serviceFullText} 
                         onChange={e => setServiceFullText(e.target.value)}
@@ -65,14 +66,15 @@ const CreateForeignServices = ({show, onHide}) => {
                         rows={5} 
                         placeholder="Введите полное описание услуги"/>
                     </Form.Group>
-            </Form>
-        </Modal.Body>
-        <Modal.Footer>
-            <Button variant={"outline-danger"} onClick={onHide}>Закрыть</Button>
-            <Button variant={"outline-success"} onClick={addServices}>Добавить</Button>
-        </Modal.Footer>
+                   
+                </Form>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant={"outline-danger"} onClick={onHide}>Закрыть</Button>
+                <Button variant={"outline-success"} onClick={addServices}>Добавить</Button>
+            </Modal.Footer>
         </Modal>
-        );
-}
+    );
+};
 
-export default CreateForeignServices
+export default CreateForeignServices;
