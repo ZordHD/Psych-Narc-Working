@@ -26,7 +26,8 @@ import '../styles/images-styles.css'
 import { observer } from "mobx-react-lite";
 import { Context } from "..";
 import { fetchLine } from "../http/lineAPI";
-import { Card, CardImg } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import FloatingAdminButton from "../components/FloatingAdminButton";
 
 const MainPage = observer(() => {
     const { departments } = useContext(Context)
@@ -89,6 +90,7 @@ const MainPage = observer(() => {
             </Row>
         </Container>
         <NavBar />
+        <FloatingAdminButton/>
 
         <section id="Running_String">
             <div className="running-String mt-3" />

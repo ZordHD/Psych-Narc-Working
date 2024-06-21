@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import '../styles/utility-styles.css'
 import OtherServices from "../components/OtherServices";
 import Footer from "../components/Footer";
+import FloatingAdminButton from "../components/FloatingAdminButton";
 
 const Services = () => {
     return (
@@ -16,6 +17,7 @@ const Services = () => {
         <div className="section-Divider mt-4 mb-3"/>
         <div className="display-2 mt-3">Для иностранных граждан</div>
         <ForeignServices/>
+        <FloatingAdminButton/>
         <div style={{display:'flex', justifyContent:'center', height:'100px'}}>
                 <Button className='button-3 mt-4' style={{border:'none', width:'325px', fontSize:'16px', fontWeight:'700'}}>
                     Конверт валют

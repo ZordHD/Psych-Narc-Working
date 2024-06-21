@@ -12,6 +12,8 @@ import '../styles/images-styles.css'
 import '../styles/text-styles.css'
 import '../styles/utility-styles.css'
 import HallOfFame from "../components/HallOfFame";
+import FloatingAdminButton from "../components/FloatingAdminButton";
+
 const TeamNews = () => {
     return (
         <>
@@ -48,6 +50,7 @@ const TeamNews = () => {
                         </div>
                     </Col>
                 </Row>
+                <FloatingAdminButton/>
                 <Row xs={1} className="mt-5">
                     <Col className="col-md-3 col-lg-4">
                         <Card style={{border:'none', height:'100%'}}>

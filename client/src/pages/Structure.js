@@ -12,6 +12,7 @@ import Administration from "../components/Administration";
 import Departments from "../components/Departments";
 import MassMedia from "../components/MassMedia";
 import Footer from "../components/Footer";
+import FloatingAdminButton from "../components/FloatingAdminButton";
 
 const Structure = () => {
     return (
@@ -55,6 +56,7 @@ const Structure = () => {
                     </Col>
                 </Row>
             </Container>
+            <FloatingAdminButton/>
             <Container className="mt-3" style={{width:'80vw'}}>
                 <Row>
                     <Col className="body-Semibold" style={{color:'#3D9378'}}>
