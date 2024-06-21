@@ -17,3 +17,18 @@ export const fetchOneServicesRB = async (id) => {
     const {data} = await $host.get('api/servicesRB/' + id)
     return data
 }
+
+export const deleteServicesRB = async (id) => {
+    const {data} = await $authHost.delete('api/servicesRB/' + id);
+    return data;
+};
+
+export const updateServicesRB = async (id, servicesRB) => {
+    const { data } = await $authHost.put(`api/servicesRB/${id}`, servicesRB);
+    return data;
+};
+
+export const getAllServicesRB = async (page, limit = 3) => {
+    const { data } = await $host.get('api/servicesRB', { params: { page, limit } });
+    return data.rows;
+  };

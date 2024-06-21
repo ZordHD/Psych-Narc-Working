@@ -17,6 +17,7 @@ export const fetchOneNews = async (id) => {
     const {data} = await $host.get('api/news/' + id)
     return data
 }
+
 export const deleteNews = async (id) => {
     const {data} = await $authHost.delete('api/news/' + id);
     return data;
@@ -29,5 +30,5 @@ export const updateNews = async (id, news) => {
 
 export const getAllNews = async (page, limit = 3) => {
     const { data } = await $host.get('api/news', { params: { page, limit } });
-    return data.rows; 
+    return data.rows;
   };
